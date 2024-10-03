@@ -1,0 +1,13 @@
+<div class="dog-detail">
+    <h2><%= dog.name %> - <%= dog.breed %></h2>
+    
+    <div class="dog-info">
+        <img src="<%= dog.img %>" alt="<%= dog.name %>" width="300">
+        <p><strong>City:</strong> <%= dog.city %></p>
+        <p><strong>Age:</strong> <%= dog.years %> years</p>
+        <p><strong>Cost:</strong> €<%= dog.cost.toFixed(2) %></p>
+        <p><strong>Description:</strong> <%= dog.description %></p>
+    </div>
+
+    <a href="/dogs">Back to Dogs List</a>
+</div>
