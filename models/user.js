@@ -11,7 +11,7 @@ const users = [
 ];
 
 class User {
-    static getByEmail(email) {  // Passa email come parametro
+    static getByEmail(email) {  
         return users.find(user => user.email === email);
     }
 

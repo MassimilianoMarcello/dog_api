@@ -36,7 +36,7 @@ const userControllers = {
                 if (token) {
                     
                     res.cookie('token', token, { httpOnly: true });
-                    res.status(200).redirect('/api/dogs');
+                    res.status(200).redirect('/api/dogs_list');
                 }
             } else {
                 res.status(409).render('404', {
@@ -85,7 +85,7 @@ const userControllers = {
 
     logout: (req, res) => {
         res.clearCookie('token');
-        res.status(200).redirect('/api/dogs');
+        res.status(200).redirect('/api/dogs_list');
     }
 };
 

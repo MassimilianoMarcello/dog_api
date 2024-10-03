@@ -56,7 +56,7 @@ class Dog {
         const newDog={
             id:Id(),
             ...dog}
-            flights.push(newDog)
+           dogs.push(newDog)
             return dog
         }
    

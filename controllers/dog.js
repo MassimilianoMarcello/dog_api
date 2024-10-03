@@ -50,7 +50,7 @@ const controllers = {
                 });
             }
 
-            const newFlight = {
+            const newDog = {
                 name,
                 cost: parseFloat(cost),
                 breed,
@@ -63,17 +63,17 @@ const controllers = {
             Dog.Add(newDog); 
             res.redirect('/api/Dogs_list');
         } catch (error) {
-            res.status(500).render('500', { title: 'Server Error', message: 'Unable to add a new Dog.' });
+            res.status(500).render('400', { title: 'Server Error', message: 'Unable to add a new Dog.' });
         }
     },
 
     deleteDog: (req, res) => {
         const dogId = req.params.id;
-        const dogExist = Flight.getById(dogId);
+        const dogExist = Dog.getById(dogId);
     
         if (dogExist) {
             try {
-               Dog.deleteFlight(dogId); 
+               Dog.deleteDog(dogId); 
                 res.redirect('/api/dogs_list'); 
             } catch (error) {
                 console.error("Error deleting flight:", error);
