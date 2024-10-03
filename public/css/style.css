@@ -86,6 +86,7 @@ nav ul li form button {
 nav ul li form button:hover {
     background-color: #ff5a4c;
     transform: scale(1.05);
+    color: #f9f9f9;
 }
 
 nav ul li form button:focus {
@@ -189,6 +190,7 @@ nav ul li form button:focus {
 
 .dog-info strong {
     color: #ff7f50;
+ 
 }
 
 a.back-link {
@@ -204,6 +206,65 @@ a.back-link {
 
 a.back-link:hover {
     background-color: #fb8c00;
+}
+/* Form Styles */
+.flight-form,.register-form,.login-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 600px;
+    margin: 10rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+.form-group {
+    margin-bottom: 15px;
+
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding: 15px;
+    color: #333;
+
+}
+
+.form-group input {
+    width: 80%;
+    margin: 1rem;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d2b299;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    
+
+}
+
+.form-group input:focus {
+    border-color: #fb8c00;
+    outline: none;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ffa726;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+ 
+}
+
+.submit-btn:hover {
+    background-color: #218838;
 }
 
 
@@ -249,3 +310,5 @@ a.back-link:hover {
 .footer-links a:hover {
     color: #ff6f61; 
 }
+
+

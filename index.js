@@ -10,6 +10,7 @@ import logger from './middleware/logger.js';
 
 // import routes
 import dogRoutes from './routes/dog.js';
+import userRoutes from './routes/user.js';
 
 // load environment variables
 dotenv.config();
@@ -39,6 +40,7 @@ app.use(logger);
 
 // use routes
 app.use('/api',dogRoutes)
+app.use('/api',userRoutes)
 
 // handle 404
 app.use('*', (req, res) => {

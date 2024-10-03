@@ -48,6 +48,12 @@ class Dog {
     static getDogList() {
         return dogs;
     }
+    static getById(id){
+        return dogs.find( dog=> {return dog.id === id})
+
+    }
+
 }
+
 
 export default Dog
