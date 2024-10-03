@@ -52,6 +52,23 @@ class Dog {
         return dogs.find( dog=> {return dog.id === id})
 
     }
+    static Add(dog){
+        const newDog={
+            id:Id(),
+            ...dog}
+            flights.push(newDog)
+            return dog
+        }
+   
+
+        static deleteDog(id) {
+            const index = dogs.findIndex(dog => dog.id === id); 
+            if (index !== -1) {
+               dogs.splice(index, 1); 
+                return true; 
+            }
+            return false; 
+        }
 
 }
 
